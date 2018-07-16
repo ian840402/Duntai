@@ -1,0 +1,13 @@
+//reset
+@import "../../node_modules/css-reset-and-normalize-sass/scss/reset-and-normalize";
+@import "../../node_modules/css-reset-and-normalize-sass/scss/flavored-reset-and-normalize";
+
+// layouts
+@import "./layouts/default";
+@import "./layouts/first_sidbar";
+
+
+// components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/first_sidbar";
