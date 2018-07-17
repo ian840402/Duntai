@@ -1,7 +1,23 @@
 extends src/pug/layouts/default.pug
 
 block head
-    title asdasasdsasds
+    title 首頁
 
 block content
-    img(src="./src/images/a.jpg")
+    // Button to Open the Modal
+    button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal') Open modal
+    // The Modal
+    #myModal.modal
+        .modal-dialog
+            .modal-content
+                // Modal Header
+                .modal-header
+                    h4.modal-title Modal Heading
+                    button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                    | Modal body..
+                // Modal footer
+                .modal-footer
+                    button.btn.btn-danger(type='button', data-dismiss='modal') Close
+

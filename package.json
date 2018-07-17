@@ -15,11 +15,14 @@
     "css-reset-and-normalize-sass": "^0.1.2",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.4",
     "parcel-plugin-eslint": "^1.0.4",
     "postcss-modules": "^1.1.0",
     "pug": "^2.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap-sass": "^3.3.7"
+  }
 }
