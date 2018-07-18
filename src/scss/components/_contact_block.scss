@@ -6,7 +6,12 @@
 .w_80{
   width: 80%;
 }
-
+input,
+textarea{
+  &:focus{
+    outline: 0px;
+  }
+}
 .contact_block{
   max-width: 1000px;
   margin:  0 auto;
@@ -22,11 +27,12 @@
     margin-bottom: 30px;
   }
   .contact_form{
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
     input[type="text"],
     textarea{
       background: transparent;
+      color:#fff;
     }
     input{
       border:0px;
@@ -47,6 +53,7 @@
   textarea{
     width: 100%;
     border:1px solid #fff;
+    padding:10px;
   }
   .submit{
     background-color: #fff;
