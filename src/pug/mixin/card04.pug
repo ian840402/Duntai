@@ -1,4 +1,4 @@
-mixin card04(title, ...items, src)
+mixin card04(title,fileName,...items)
   .card04
     .content
       .col
@@ -10,4 +10,4 @@ mixin card04(title, ...items, src)
               li= item
       .col
         .field.img
-          img(src=`${src}`)
+          img(src=`./src/images/${fileName}`)
