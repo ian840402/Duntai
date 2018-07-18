@@ -1,8 +1,8 @@
-read -p "Which the file would you want to compile (Example: index.pug)? " filename
+read -p "Which the page would be compiled (Example: index)? " filename
 
 mv dist/*.html .
 rm -rf dist/
 mkdir dist
 mv *.html dist/
-parcel build ./${filename}
+parcel build ./src/pug/page/${filename}/${filename}.pug
 tar -cvf dist.tar dist/

@@ -1,3 +1,3 @@
-read -p "Which the file would you want to compile (Example: index.pug)? " filename
+read -p "Which the page would be compiled (Example: index)? " filename
 
-parcel ./${filename}  --open -p 3000
+parcel ./src/pug/page/${filename}/${filename}.pug  --open -p 3000
