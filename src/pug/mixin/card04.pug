@@ -1,0 +1,13 @@
+mixin card04(title, ...items, src)
+  .card04
+    .content
+      .col
+        .field.title
+          h3= title
+        .field.list
+          ul 
+            each item in items
+              li= item
+      .col
+        .field.img
+          img(src=`${src}`)
