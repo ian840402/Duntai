@@ -1,3 +1,60 @@
 footer {
-    // background: red;
+  overflow: hidden;
+  background-color: #EA5717;
+  color: #fff;
+  text-align: center;
+
+  .content_wrapper {
+    padding: 60px 20px;
+
+    .logo {
+      margin-bottom: 50px;
+    }
+
+    .row_wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 24px;
+      line-height: 24px;
+      position: relative;
+
+      &::before {
+        content: "";
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        width: 100px;
+        height: 150px;
+        background: linear-gradient(110deg, transparent 49.5%, #fff 49.5%, transparent 50.5%, transparent 50.5%);
+        display: none;
+        @include media-breakpoint-up(md) {
+          display: block;
+        }
+      }
+
+      .row {
+        margin: -10px -90px;
+
+        > * {
+          padding: 10px 90px;
+
+          .wrapper {
+            margin: -8px 0;
+
+            > * {
+              white-space: nowrap;
+              padding: 8px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 20px;
+    border-top: 2px solid #fff;
+  }
 }

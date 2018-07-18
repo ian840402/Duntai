@@ -65,8 +65,15 @@ header {
       li {
         padding: 48px 0;
 
+        &.active,
+        &:hover {
+          a {
+            color: white;
+          }
+        }
+
         a {
-          color: white;
+          color: rgb(244,193,176);
           font-size: 36px;
           line-height: 36px;
 
