@@ -1,0 +1,31 @@
+.origination-block {
+  margin: 115px auto;
+  .bg-wrap {
+    .text {
+      font-size: 48px;
+    }
+  }
+  .origination {
+    .title {
+      font-size: 48px;
+    }
+    .text {
+      font-size: 30px;
+    }
+  }
+  .values,
+  .goals,
+  .strategy {
+    .title {
+      font-size: 30px;
+    }
+    .text {
+      font-size: 22px;
+    }
+    .items {
+      .item {
+        font-size: 22px;
+      }
+    }
+  }
+}

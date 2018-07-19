@@ -1,8 +1,7 @@
 // grid
-@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './bootstrap/scss/bootstrap';
 
 // Base
-@import "./base/bootstrap_variables";
 @import './base/html';
 
 // layouts
@@ -17,3 +16,6 @@
 @import "./components/introducer_block";
 @import "./components/first_sidbar";
 @import "./components/slogan";
+
+// container
+@import "./container/AboutOrigination";
