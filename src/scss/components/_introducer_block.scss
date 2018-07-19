@@ -1,0 +1,40 @@
+.introducer_bg {
+  background-color: #E2DED3;
+  padding: 60px 15px;
+}
+
+.introducer_block {
+  
+  h2.title {
+    margin-bottom: 40px;
+    color: #EA5717;
+  }
+  p {
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #857671;
+  }
+  strong{
+    color:#EA5717;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .introducer_body{
+    max-width: 300px;
+  }
+  .introducer_btn {
+    margin-top: 30px;
+    a {
+      color: #EA5717;
+      border: 2px solid #EA5717;
+      padding: 10px 30px;
+      border-radius: 25px;
+      display: inline-block;
+      &:hover {
+        background-color: #EA5717;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
