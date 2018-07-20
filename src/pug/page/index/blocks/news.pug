@@ -25,11 +25,12 @@ include ../../../mixin/card01.pug
 - }
 
 
-.news.blocks.container.py-5
-  h2.block-title(class="text-center mb-5") 最新消息
-  ul.row
-    each item, index in newDatas
-        li.d-flex.col-lg-4.col-md-6(class=(index == 3 ? 'd-xs-none': ''))
-          +card01(item)
-  div.more(class="text-center")
-    a 更多消息
+.block-news
+  .container.py-5
+    h2.block-title(class="text-center mb-5") 最新消息
+    ul.row
+      each item, index in newDatas
+          li.d-flex.col-lg-4.col-md-6(class=(index == 3 ? 'd-xs-none': ''))
+            +card01(item)
+    div.more(class="text-center")
+      a 更多消息

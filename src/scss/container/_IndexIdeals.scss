@@ -1,0 +1,16 @@
+.block-ideals{
+  background: #E2DED3;
+  .bg{
+    position: relative;
+    &:before{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 60%;
+      background: #857671;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
