@@ -16,6 +16,8 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black : #000;
+$brown-1:#857671;
+$brown-2:#E2DED3;
 $grays: ();
 // stylelint-disable-next-line scss/dollar-variable-default
 $grays: map-merge( ( "100": $gray-100, "200": $gray-200, "300": $gray-300, "400": $gray-400, "500": $gray-500, "600": $gray-600, "700": $gray-700, "800": $gray-800, "900": $gray-900), $grays);
@@ -77,7 +79,7 @@ $sizes: map-merge( ( 25: 25%, 50: 50%, 75: 75%, 100: 100%, auto: auto), $sizes);
 // Body
 //
 // Settings for the `<body>` element.
-$body-bg : $white;
+$body-bg : $brown-2;
 $body-color : $gray-900;
 // Links
 //
@@ -100,7 +102,7 @@ $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
-$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1170px);
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 // Grid columns
 //

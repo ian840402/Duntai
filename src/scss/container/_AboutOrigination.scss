@@ -1,16 +1,26 @@
 .origination-block {
   margin: 115px auto;
   .bg-wrap {
+    padding: 78px 54px;
     .text {
       font-size: 48px;
     }
   }
-  .origination {
-    .title {
-      font-size: 48px;
+  .origination-wrap {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 80px;
     }
-    .text {
-      font-size: 30px;
+    .origination {
+      margin-top: 27px;
+      .title {
+        font-size: 48px;
+      }
+      .text {
+        line-height: 3rem;
+        color: $brown-1;
+        font-size: 30px;
+      }
     }
   }
   .values,
@@ -20,11 +30,37 @@
       font-size: 30px;
     }
     .text {
+      color: $brown-1;
       font-size: 22px;
     }
     .items {
       .item {
+        color: $brown-1;
         font-size: 22px;
+      }
+    }
+    &:after {
+      content: "";
+      background-color: $orange;
+      width: 100%;
+      display: block;
+      height: 43px;
+    }
+  } // 同高 
+  .values,
+  .goals {
+    .box {
+      @include media-breakpoint-up(xl) {
+        min-height: 380px;
+      }
+    }
+  }
+  .goals {
+    .text {
+      @include media-breakpoint-up(xl) {
+        column-rule: 1px solid $orange;
+        column-gap: 50px;
+        column-count: 2;
       }
     }
   }
