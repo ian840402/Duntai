@@ -12,7 +12,7 @@
   const config = {
     src: {
       js: './src/js/**/*.js',
-      sass: './src/sass/**/*.sass',
+      sass: './src/scss/**/*.scss',
       html: './src/pug/**/*.pug',
       image: './src/images/**/*.*'
     },
@@ -74,7 +74,7 @@
     }, function(event) {
       if (/\.js$/i.test(event.path)) {
         minifyJS()
-      } else if (/\.sass$/i.test(event.path)) {
+      } else if (/\.scss$/i.test(event.path)) {
         minifySASS()
       } else if (/\.pug$/i.test(event.path)) {
         minifyHTML()
