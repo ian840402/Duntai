@@ -1,4 +1,4 @@
 // import-jquery.js
-import jquery from 'jquery';
+import jquery from 'jquery'
 
-export default window.$ = window.jQuery = jquery;
+export default window.$ = window.jQuery = jquery
