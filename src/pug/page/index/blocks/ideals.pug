@@ -25,7 +25,7 @@ include ../../../mixin/card02.pug
 
 .block-ideals.py-5
   .container
-    h2.block-title(class="text-center mb-4") 敦泰有為
+    h2.block-title(class="text-center text-primary mb-4") 敦泰有為
     .text-center.mb-4
       p 敦勉誠篤、永續安泰，
       p 個用心耕耘的建築團隊、一個您可以安居信賴的企業，
@@ -37,3 +37,6 @@ include ../../../mixin/card02.pug
         each item, index in idealDatas
             li.d-flex.col-lg-4.col-md-6(class=(index == 3 ? 'd-xs-none': ''))
               +card02(item)
+  .text-center(class="mt-5")
+    a.btn.btn-radius(class="" href="/") 更多消息
+        
