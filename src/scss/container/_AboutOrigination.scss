@@ -33,10 +33,17 @@
       color: $brown-1;
       font-size: 22px;
     }
-    .items {
-      .item {
-        color: $brown-1;
-        font-size: 22px;
+    .items-wrap{
+      @include media-breakpoint-up(xl) {
+        column-rule: 1px solid $orange;
+        column-gap: 50px;
+        column-count: 2;
+      }
+      .items {
+        .item {
+          color: $brown-1;
+          font-size: 22px;
+        }
       }
     }
     &:after {
