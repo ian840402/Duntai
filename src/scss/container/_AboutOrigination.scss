@@ -3,7 +3,10 @@
   .bg-wrap {
     padding: 78px 54px;
     .text {
-      font-size: 48px;
+      font-size: 2rem;
+      @include media-breakpoint-up(xl) {
+        font-size: 48px;
+      }
     }
   }
   .origination-wrap {
@@ -14,12 +17,18 @@
     .origination {
       margin-top: 27px;
       .title {
-        font-size: 48px;
+        font-size: 2rem;
+        @include media-breakpoint-up(xl) {
+          font-size: 48px;
+        }
       }
       .text {
-        line-height: 3rem;
+        font-size: 1.5rem;
+        @include media-breakpoint-up(xl) {
+          font-size: 30px;
+          line-height: 3rem;
+        }
         color: $brown-1;
-        font-size: 30px;
       }
     }
   }
@@ -33,13 +42,14 @@
       color: $brown-1;
       font-size: 22px;
     }
-    .items-wrap{
+    .items-wrap {
       @include media-breakpoint-up(xl) {
         column-rule: 1px solid $orange;
-        column-gap: 50px;
+        column-gap: 100px;
         column-count: 2;
       }
       .items {
+        padding: 0;
         .item {
           color: $brown-1;
           font-size: 22px;
@@ -66,7 +76,7 @@
     .text {
       @include media-breakpoint-up(xl) {
         column-rule: 1px solid $orange;
-        column-gap: 50px;
+        column-gap: 100px;
         column-count: 2;
       }
     }
