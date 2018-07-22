@@ -7,6 +7,37 @@
 }
 
 //
+// Icon
+//
+
+.icon {
+  display: flex;
+  align-items: center;
+  &:before{
+    content: '';
+    display: block;
+  }
+}
+
+.arrow-left {
+  &:before{
+    background: url("./../images/icons/arrowLeft.png") no-repeat;
+    background-size: 100%;
+    width: 63px * 0.3;
+    height: 97px * 0.3;
+  }
+}
+
+.arrow-right {
+  &:before{
+    background: url("./../images/icons/arrowRight.png") no-repeat;
+    background-size: 100%;
+    width: 63px * 0.3;
+    height: 97px * 0.3;
+  }
+}
+
+//
 // Button
 //
 

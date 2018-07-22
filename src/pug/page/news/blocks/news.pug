@@ -1,4 +1,5 @@
-include ../../../mixin/card01.pug
+include ../../../mixin/card01
+include ../../../mixin/pager
 
 -
   var newsPageData = {
@@ -48,8 +49,10 @@ include ../../../mixin/card01.pug
 
 
 .news
-  .container.py-5
-    ul.row
+  .container.pt-5.pb-2
+    ul.row.m-0.p-0
       each item, index in newsPageData
           li.d-flex.col-lg-4.col-md-6.mb-5(class=(index == 3 ? 'd-xs-none': ''))
             +card01(item)
+  .d-flex.justify-content-center
+    +pager(5)
