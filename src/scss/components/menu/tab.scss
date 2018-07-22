@@ -1,0 +1,36 @@
+.menu.tab {
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  ul {
+    li {
+      position: relative;
+    }
+    li +li {
+      &:before{
+        content: '';
+        display: block;
+        width: 1px;
+        height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background: $primary;
+      }
+    }
+    li.active,li:hover{
+      background: $primary;
+      +li {
+        &:before{
+          display: none;
+        }
+      }
+      a{
+        color: #fff;
+      }
+    }
+  }
+}

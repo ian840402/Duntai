@@ -1,0 +1,17 @@
+extends ../../layouts/default.pug
+
+block head
+    title 最新消息
+
+block content
+    
+    .bg01.py-5
+    
+        h2.block-title(class="text-center mb-5 text-white") 最新消息
+        
+        .d-flex.justify-content-center
+          include blocks/tab
+        
+        include blocks/news
+  
+  

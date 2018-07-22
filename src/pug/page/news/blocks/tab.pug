@@ -1,0 +1,23 @@
+include ../../../mixin/menu
+
+-
+ var newsTab = {
+   type: 'tab',
+   activeIndex: 0,
+   items: [
+     {
+       name: '最新消息',
+       link: '/'
+     },
+     {
+       name: '公益資訊',
+       link: '/'
+     },
+     {
+       name: '建案進度',
+       link: '/'
+     }
+   ]
+ }
+
++menu(newsTab)
