@@ -1,0 +1,14 @@
+mixin pager(num)
+
+  -var i = 1
+  
+  .pager.d-flex.align-content-middle
+    .prew.mr-4
+      a.icon.arrow-left
+    ul.d-flex.p-0.m-0
+      while i <= num
+        li.d-block(class=(i != 1 ? 'ml-1' : ''))
+          a.px-3.py-2(class=(i == 1 ? 'bg-white text-primary' : 'text-white') href="/")=i++
+    .next.ml-4
+      a.icon.arrow-right
+      

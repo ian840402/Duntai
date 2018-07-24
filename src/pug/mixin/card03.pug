@@ -1,0 +1,17 @@
+-
+  var card01Default= {
+        image: './src/images/card01_01.png',
+        title: '<div>綠美圖</div><div>將成台中新地標</div>', 
+        content: '「台中綠美圖將成為台中新地標！」市府規畫在水湳經貿園區中央公園北端興建「台中綠美圖」，是世界首例採圖書館與美術館共構的建築...',
+       
+  }
+
+mixin card03(obj)
+  - obj = obj || card01Default
+    .image.mb-4
+       img(src=obj.image)
+    .wrap()
+      .title.mb-3
+         h3=obj.title
+      .body(class="mb-3") !{obj.content}
+   

@@ -1,0 +1,74 @@
+.introduction_sider_block{
+  background-color: $brown-2;
+  padding:60px 15px;
+  h2.title {
+    color: #EA5717;
+  }
+  p{
+    color:#857671;
+    font-size: 20px;
+  }
+  .slideshow_wrapper {
+    position: relative;
+    @include media-breakpoint-up(md) {
+      &:hover {
+        .bx-controls {
+          opacity: 1;
+        }
+      }
+    }
+    .bx-viewport {
+      .bx-caption {
+        @include media-breakpoint-up(md) {
+          position: absolute;
+          width: 100%;
+          bottom: 0;
+          z-index: 99;
+        }
+        span {
+          display: block;
+          font-size: 24px;
+          background-color: #333333;
+          padding: 20px;
+          color: white;
+        }
+      }
+    }
+    .bx-controls {
+      position: absolute;
+      z-index: 100;
+      width: 95%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 1s;
+      @include media-breakpoint-up(md) {
+        opacity: 0;
+      }
+      >* {
+        display: flex;
+        justify-content: space-between;
+        .bx-prev {
+          background-image: url('../images/icons/left-arrow.png');
+          width: 25px;
+          height: 40px;
+          background-size: cover;
+          color: transparent;
+          &:hover {
+            opacity: .8;
+          }
+        }
+        .bx-next {
+          background-image: url('../images/icons/right-arrow.png');
+          width: 25px;
+          height: 40px;
+          background-size: cover;
+          color: transparent;
+          &:hover {
+            opacity: .8;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+include ../../../mixin/card04.pug
+
+- 
+  var servieData = {
+    1:{
+      title: '關心您的生活',
+      image: '/images/about_service2.jpg',
+      list: [
+        "￭社區聯誼活動協辦",
+        "￭重要節日、音樂會活動",
+        "￭跨社區戶外活動之策辦",
+        "￭敦泰新建案參觀"
+        ]
+      },
+    2:{
+      title: '關心珍惜您我的一切',
+      image: '/images/about_service3.jpg',
+      list: [
+        "￭客戶滿意度調查",
+        "￭FACEBOOK專頁成立",
+        "￭天災提醒及關心",
+        ]
+      }
+  }
+
+.service-block
+  .container
+    h2.title.text-center.text-primary 貼心服務
+    .row.first-row
+      .col
+        .block-wrap.big-row
+          img(src='/images/about_service1.jpg')
+          .text-wrap.bg-white
+            h3.title.text-primary 關心您的家
+            .list-wrap
+              ul.items.pl-0
+                li.item.d-block.mb-2 ￭舉辦施工說明會
+                li.item.d-block.mb-2 ￭完整建築履歷紀錄及維護說明
+                li.item.d-block.mb-2 ￭線上工程進度照片即時更新瀏覽
+                li.item.d-block.mb-2 ￭變更設計作業
+                li.item.d-block.mb-2 ￭工地帶看參觀
+                li.item.d-block.mb-2 ￭房屋保固服務
+              ul.items.pl-0
+                li.item.d-block.mb-2 ￭保固期後修繕諮詢服務
+                li.item.d-block.mb-2 ￭優良廠商提供
+                li.item.d-block.mb-2 ￭數位房屋資訊及諮詢平台經營
+                li.item.d-block.mb-2 ￭邀約住戶參觀協力廠商
+                li.item.d-block.mb-2 ￭請協力廠商舉辦說明會
+                li.item.d-block.mb-2 ￭颱風、地震後派員檢查門窗或其他設施
+              ul.items.pl-0
+                li.item.d-block.mb-2 ￭年度社區公設健檢
+                li.item.d-block.mb-2 ￭年度房屋健檢
+                li.item.d-block.mb-2 ￭緊急維護服務
+                li.item.d-block.mb-2 ￭室內裝潢建議及諮詢
+    each item, index in servieData
+      +card04(item)

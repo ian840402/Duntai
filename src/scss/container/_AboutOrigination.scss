@@ -1,0 +1,84 @@
+.origination-block {
+  margin: 115px auto;
+  .bg-wrap {
+    padding: 78px 54px;
+    .text {
+      font-size: 2rem;
+      @include media-breakpoint-up(xl) {
+        font-size: 48px;
+      }
+    }
+  }
+  .origination-wrap {
+    margin-bottom: 30px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 80px;
+    }
+    .origination {
+      margin-top: 27px;
+      .title {
+        font-size: 2rem;
+        @include media-breakpoint-up(xl) {
+          font-size: 48px;
+        }
+      }
+      .text {
+        font-size: 1.5rem;
+        @include media-breakpoint-up(xl) {
+          font-size: 30px;
+          line-height: 3rem;
+        }
+        color: $brown-1;
+      }
+    }
+  }
+  .values,
+  .goals,
+  .strategy {
+    .title {
+      font-size: 30px;
+    }
+    .text {
+      color: $brown-1;
+      font-size: 22px;
+    }
+    .items-wrap {
+      @include media-breakpoint-up(xl) {
+        column-rule: 1px solid $orange;
+        column-gap: 100px;
+        column-count: 2;
+      }
+      .items {
+        padding: 0;
+        .item {
+          color: $brown-1;
+          font-size: 22px;
+        }
+      }
+    }
+    &:after {
+      content: "";
+      background-color: $orange;
+      width: 100%;
+      display: block;
+      height: 43px;
+    }
+  } // 同高 
+  .values,
+  .goals {
+    .box {
+      @include media-breakpoint-up(xl) {
+        min-height: 400px;
+      }
+    }
+  }
+  .goals {
+    .text {
+      @include media-breakpoint-up(xl) {
+        column-rule: 1px solid $orange;
+        column-gap: 100px;
+        column-count: 2;
+      }
+    }
+  }
+}

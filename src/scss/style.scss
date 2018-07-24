@@ -1,9 +1,11 @@
 // grid
-@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './bootstrap/scss/bootstrap';
 
 // Base
-@import "./base/bootstrap_variables";
 @import './base/html';
+
+// Global
+@import "./global";
 
 // layouts
 @import "./layouts/default";
@@ -12,8 +14,26 @@
 // components
 @import "./components/header";
 @import "./components/footer";
-@import "./components/contact_block";
-@import "./components/brand_block";
-@import "./components/introducer_block";
 @import "./components/first_sidbar";
-@import "./components/slogan";
+@import "./components/menu/tab";
+
+// container
+//About
+@import "./container/AboutOrigination";
+@import "./container/AboutIntroducer";
+@import "./container/AboutService";
+//Index
+@import "./container/IndexIdeals";
+@import "./container/IndexNews";
+@import "./container/IndexSlogan";
+@import "./container/IndexQuality";
+@import "./container/IndexContact";
+@import "./container/IndexBrand";
+@import "./container/IndexIntroducer";
+//Contact
+@import "./container/ContactContent";
+//Introduction
+@import "./container/IntroductionBrand";
+@import "./container/IntroductionAbout";
+@import "./container/IntroductionSider";
+@import "./container/IntroductionProduct";

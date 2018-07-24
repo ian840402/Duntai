@@ -1,0 +1,50 @@
+include ../../../mixin/card03
+
+-
+  var Card03Data = {
+    1:{ 
+        image: '../../../images/card03_p1.png',
+        title: '德國 POGGENPOHL', 
+        content: '<p>世界重量級名人鍾愛<br>德國國家形象代表<br>百年品牌賓士級廚具系統</p>', 
+      },
+    2:{ 
+        image: '../../../images/card03_p2.png',
+        title: '德國 DURAVIT', 
+        content: '<p>結合傳統的美學觀點<br>厚實工藝技術<br>紮實的結構體<br>經年後仍歷久如新</p>', 
+      },
+    3:{ 
+        image: '../../../images/card03_p3.png',
+        title: 'YKK門窗', 
+        content: '<p>日本第一品牌關西機場指定<br>高隔音、高水密、高氣密窗<br>換氣框，實現會呼吸的健康居家</p>', 
+      },
+    4:{ 
+        image: '../../../images/card03_p4.png',
+        title: '敵銳防火裝甲門', 
+        content: '<p>義大利原裝進口<br>六星級大門</p>', 
+      },
+    5:{ 
+        image: '../../../images/card03_p5.png',
+        title: '鐠適保鐵捲門', 
+        content: '<p>美觀耐用噪音小<br>人性化設計</p>', 
+      },
+    6:{ 
+        image: '../../../images/card03_p6.png',
+        title: '益之源淨水器', 
+        content: '<p>奈米級高密度活性碳濾心<br>殺死99.99%以上的細菌與病毒<br>不需煮沸、可生飲</p>', 
+      },
+  
+   }
+
+.introduction_card03_block
+  .container
+    h2.title.text-center.mb-5 細緻本善
+    .sub_title.text-center.d-flex.align-items-center 健康、生活、美學兼具
+     
+    ul.row.p-0.card03.mt-5
+      each item, index in Card03Data
+        li.col-md-4.mb-5
+          +card03(item)
+    .more_btn.text-center
+      a(href="/") 預約賞屋
+          
+            

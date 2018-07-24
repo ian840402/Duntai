@@ -1,13 +1,15 @@
-mixin card04(title,fileName,...items)
-  .card04
-    .content
+mixin card04(obj)
+  .card04.bg-white
+    .row
       .col
-        .field.title
-          h3= title
-        .field.list
-          ul 
-            each item in items
-              li= item
-      .col
-        .field.img
-          img(src=`./src/images/${fileName}`)
+        .block-wrap.d-flex.justify-content-lg-between.flex-column.flex-lg-row
+          .wrap.order-lg-1
+              .field
+                img.img.img-fluid(src=obj.image)
+          .wrap.p-2.px-lg-5.order-lg-0
+            h3.title.text-primary= obj.title
+            .list-wrap
+              ul.items.pl-0
+                each item in obj.list
+                  li.item.d-block.mb-3= item
+          

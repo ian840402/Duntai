@@ -1,0 +1,50 @@
+.service-block{
+  margin: 55px 0;
+
+  @include media-breakpoint-up(xl) {
+  margin: 115px 0;
+  }
+  h2.title{
+    font-size: 48px;
+    margin-bottom: 55px;
+  }
+  .first-row{
+    margin-bottom: 65px;
+    .big-row{
+      .text-wrap{
+        padding: .5rem;
+        @include media-breakpoint-up(xl) {
+          padding: 40px 57px 50px;
+        }
+        .title{
+          margin: 40px 0 ;
+          @include media-breakpoint-up(xl){
+            margin: 0 0 40px;
+          }
+        }
+      }
+      .list-wrap{
+        @include media-breakpoint-up(xl) {
+          column-rule: 1px solid $orange;
+          column-gap: 30px;
+          column-count: 3;
+        }
+      }
+    }
+  }
+  .items{
+    .item{
+      color: $brown-1;
+      font-size: 22px;
+    }
+  }
+  .card04{
+    margin-bottom: 65px;
+    .title{
+      margin: 40px 0;
+    }
+    .img{
+      width: 100%;
+    }
+  }
+}

@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 img {
@@ -16,5 +16,14 @@ ul.menu {
 
   > li {
     display: block;
+  }
+}
+
+a {
+  transition: all .5s;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
   }
 }

@@ -1,0 +1,63 @@
+.contact_content_wrapper {
+  color: white;
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .row_wrapper {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 65px 0;
+
+    .max-width {
+      max-width: 975px;
+      margin: 0 auto;
+
+      .row {
+        margin: -15px;
+
+        > * {
+          padding: 15px;
+
+          .name {
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+
+          .address,
+          .e_mail,
+          .fax,
+          .phone,
+          .service {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact_link {
+    margin-top: 65px;
+    text-align: center;
+
+    a {
+      font-size: 30px;
+      line-height: 30px;
+      color: white;
+      padding: 25px 50px;
+      border: 2px solid white;
+      border-radius: 60px;
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}
