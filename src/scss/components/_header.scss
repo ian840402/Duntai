@@ -57,6 +57,9 @@ header {
 
     &.show {
       height: 88vh;
+      @at-root header {
+        background-color: rgba($color: #231815, $alpha: 0.5);
+      }
     }
 
     .menu {
