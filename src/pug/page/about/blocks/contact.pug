@@ -1,0 +1,47 @@
+.contact_bg#contact
+  .contact_block.container
+    h2.title.text-center 聯絡我們
+    p.sub_title.text-center 若您對我們公司有興趣或疑問，
+      br
+      | 歡迎隨時來信聯絡，我們會盡快回覆您。
+    .contact_form
+      form.row(action="",method="")
+        .col-md-6
+          .field_wrap.border_b_color
+             label(for="name") 姓名：
+             input#name.w_80(type="text")
+        .col-md-6
+          .field_wrap.border_b_color
+             label 性別：
+             input#male(type="radio", name="gender", value="male" checked) 
+             label(for="male") 男
+             input#female(type="radio", name="gender", value="female") 
+             label(for="female") 女 
+        .col-md-6
+          .field_wrap.border_b_color
+             label(for="phone") 電話：
+             input#phone.w_80(type="text")
+        .col-md-6
+          .field_wrap.border_b_color
+             label(for="email") 信箱：
+             input#email.w_80(type="text")
+        .col-md-6
+          .field_wrap.border_b_color
+             label(for="subject") 主旨：
+             input#subject.w_80(type="text")
+        .col-md-6
+          .field_wrap.border_b_color
+             label(for="verification") 驗證碼：
+             input#verification(type="text") 
+             span.verification_code VIVK
+        .col-12
+          .field_wrap
+            label#textarea_text.textarea_text(for="textarea") 您的意見：
+            textarea#textarea(name="", cols="30", rows="10")
+        .col-12.text-center
+          input.submit#submit(type="submit" value="送出")
+
+    
+  
+
+  
