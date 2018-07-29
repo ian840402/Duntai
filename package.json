@@ -29,6 +29,7 @@
     "webpack-stream": "^4.0.0"
   },
   "dependencies": {
+    "aos": "^2.3.3",
     "bootstrap": "^4.1.2",
     "bxslider": "^4.2.13",
     "express": "^4.16.2",

@@ -31,7 +31,7 @@ include ../../../mixin/card01.pug
     h2.block-title(class="text-center mb-5 text-white") 最新消息
     ul.row
       each item, index in newDatas
-          li.d-flex.col-lg-4.col-md-6(class=(index == 3 ? 'd-xs-none': ''))
+          li.d-flex.col-lg-4.col-md-6(class=(index == 3 ? 'd-xs-none': '') data-aos="flip-down")
             +card01(item)
     div.more(class="text-center my-5")
       a.btn.btn-radius(class="border-white text-white" href="/") 更多消息
