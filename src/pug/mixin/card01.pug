@@ -11,6 +11,7 @@ mixin card01(obj)
   - obj = obj || card01Default
   .card.card-01(class="d-flex flex-column")
     .image
+      a(href=obj.link)
        img(src=obj.image)
     .wrap(class="px-5 py-3")
       .title(class="mb-3")

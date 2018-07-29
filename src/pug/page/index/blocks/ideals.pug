@@ -3,21 +3,21 @@ include ../../../mixin/card02.pug
 -
  var idealDatas = {
   1:{ 
-      title: '<div>綠美圖</div><div>將成台中新地標</div>', 
+      title: '敦泰本善磅礡落成', 
       image: '../../../images/card02_01.png',
-      date: '2018.03.30', 
+      date: '2017.11', 
       link: 'https://www.google.com.tw/'
     },
   2:{ 
-      title: '<div>台中綠美圖</div><div>讓人不自覺想進來</div>', 
+      title: '<div>全國各地之工業同會</div><div>參訪敦泰本善</div>', 
       image: '../../../images/card02_02.png',
-      date: '2018.03.30', 
+      date: '2017.12', 
       link: 'https://www.google.com.tw/'
     },
   3:{ 
-      title: '<div>西苑高中</div><div>圖書館美化牆</div>', 
+      title: '新竹縣不動產參訪', 
       image: '../../../images/card02_03.png',
-      date: '2018.03.30', 
+      date: '2018.01', 
       link: 'https://www.google.com.tw/'
     },
  }
@@ -33,9 +33,9 @@ include ../../../mixin/card02.pug
       p Our ideal is still continue...
   .bg
     .container
-      ul.row
+      ul.row.m-0.p-0
         each item, index in idealDatas
-            li.d-flex.col-lg-4.col-md-6(class=(index == 3 ? 'd-xs-none': ''))
+            li.d-flex.col-lg-4.col-md-6.mb-5(class=(index == 3 ? 'd-md-none d-lg-flex': ''))
               +card02(item)
   .text-center(class="mt-5")
     a.btn.btn-radius(class="" href="/") 更多消息

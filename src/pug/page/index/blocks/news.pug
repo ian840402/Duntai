@@ -29,9 +29,9 @@ include ../../../mixin/card01.pug
 .block-news.bg01
   .container.py-5
     h2.block-title(class="text-center mb-5 text-white") 最新消息
-    ul.row
+    ul.row.m-0.p-0
       each item, index in newDatas
-          li.d-flex.col-lg-4.col-md-6(class=(index == 3 ? 'd-xs-none': '') data-aos="flip-down")
+          li.d-flex.col-lg-4.col-md-6.mb-5(class=(index == 3 ? 'd-md-none d-lg-flex': '') data-aos="flip-down" data-aos-delay=(100*index)  data-aos-duration="1000")
             +card01(item)
     div.more(class="text-center my-5")
       a.btn.btn-radius(class="border-white text-white" href="/") 更多消息

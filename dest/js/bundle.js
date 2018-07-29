@@ -10454,13 +10454,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // import 'aos/dist/aos.css'
 // GitHub: https://github.com/michalsnik/aos
 
-// AOS.init()
-
-// document.onLoad = () => {
-//   AOS.init()
-//
-// }
-//
 window.addEventListener('load', () => {
     __WEBPACK_IMPORTED_MODULE_3_aos___default.a.init()
 })
