@@ -17,8 +17,8 @@ mixin card01(obj)
       .title(class="mb-3")
          h3 
            a(href=obj.link) !{obj.title}
-      .date(class="mb-3")
-         h5=obj.date
+      .date.text-primary(class="mb-3")
+         h5.small=obj.date
       .body(class="mb-3")= obj.content
     .more(class="d-flex justify-content-center mt-auto mb-3")
       a.btn.bg-primary.text-white(class="d-block p-2" href=obj.link) 閱讀更多

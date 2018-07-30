@@ -10,8 +10,8 @@
 mixin card02(obj)
   - obj = obj || card01Default
   .card.card-02.bg-primary(class="d-flex flex-column pt-3 border-0 shadow")
-    .date(class="text-center bg-white p-2")
-       h5(class="mb-0")=obj.date
+    .date(class="d-flex justify-content-center text-primary bg-white p-2")
+       h5(class="mb-0 border-bottom border-primary")=obj.date
     .image
        img(src=obj.image)
     .title(class="p-3")
