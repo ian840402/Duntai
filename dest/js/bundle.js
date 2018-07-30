@@ -10465,8 +10465,7 @@ const footerFixed = () => {
 
   footerDOM.style.width = '100%'
   footerDOM.style.position = 'fixed'
-  footerDOM.style.zIndex = '-1'
-  footerDOM.style.bottom = '0px'
+  footerDOM.style.bottom = '0'
 
   newDOM.style.height = `${footerDOM.offsetHeight}px`
 
