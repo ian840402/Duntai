@@ -10458,6 +10458,25 @@ window.addEventListener('load', () => {
     __WEBPACK_IMPORTED_MODULE_3_aos___default.a.init()
 })
 
+const footerFixed = () => {
+
+  let newDOM = document.createElement('div')
+  let footerDOM = document.getElementById('footer')
+
+  footerDOM.style.width = '100%'
+  footerDOM.style.position = 'fixed'
+  footerDOM.style.zIndex = '-1'
+  footerDOM.style.bottom = '0px'
+
+  newDOM.style.height = `${footerDOM.offsetHeight}px`
+
+  document.body.insertBefore( newDOM, document.getElementById('footer'))
+}
+
+window.addEventListener('load', () => {
+  footerFixed()
+})
+
 
 /***/ }),
 /* 2 */
