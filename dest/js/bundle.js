@@ -10469,6 +10469,10 @@ const footerFixed = () => {
 
   newDOM.style.height = `${footerDOM.offsetHeight}px`
 
+  window.addEventListener('resize',() => {
+    newDOM.style.height = `${footerDOM.offsetHeight}px`;
+  });
+
   document.body.insertBefore( newDOM, document.getElementById('footer'))
 }
 

@@ -12,11 +12,11 @@ footer {
     }
 
     .row_wrapper {
-      max-width: 640px;
+      max-width: 600px;
       margin: 0 auto;
       text-align: left;
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 20px;
+      line-height: 20px;
       position: relative;
 
       &::before {
@@ -56,5 +56,7 @@ footer {
   .copyright {
     padding: 20px;
     border-top: 2px solid #fff;
+    font-size: 13px;
+    // line-height: 14px;
   }
 }
