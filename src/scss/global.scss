@@ -19,18 +19,36 @@
   }
 }
 
-.arrow-left {
+.arrow-left-white {
   &:before{
-    background: url("./../images/icons/arrowLeft.png") no-repeat;
+    background: url("./../images/icons/arrowLeft-white.png") no-repeat;
     background-size: 100%;
     width: 63px * 0.3;
     height: 97px * 0.3;
   }
 }
 
-.arrow-right {
+.arrow-right-white {
   &:before{
-    background: url("./../images/icons/arrowRight.png") no-repeat;
+    background: url("./../images/icons/arrowRight-white.png") no-repeat;
+    background-size: 100%;
+    width: 63px * 0.3;
+    height: 97px * 0.3;
+  }
+}
+
+.arrow-left-primary {
+  &:before{
+    background: url("./../images/icons/arrowLeft-primary.png") no-repeat;
+    background-size: 100%;
+    width: 63px * 0.3;
+    height: 97px * 0.3;
+  }
+}
+
+.arrow-right-primary {
+  &:before{
+    background: url("./../images/icons/arrowRight-primary.png") no-repeat;
     background-size: 100%;
     width: 63px * 0.3;
     height: 97px * 0.3;
@@ -47,5 +65,3 @@ a.btn-radius, .btn-radius {
   border:2px solid #EA5717;
   padding:10px 30px;
 }
-
-

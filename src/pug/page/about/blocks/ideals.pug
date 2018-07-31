@@ -1,0 +1,100 @@
+include ../../../mixin/card02.pug
+include ../../../mixin/pager
+include ../../../mixin/menu
+
+-
+ var idealTab = {
+   type: 'tab',
+   activeIndex: 0,
+   items: [
+     {
+       name: '2013',
+       link: '/'
+     },
+     {
+       name: '2014',
+       link: '/'
+     },
+     {
+       name: '2015',
+       link: '/'
+     },
+     {
+       name: '2016',
+       link: '/'
+     },
+     {
+       name: '2017',
+       link: '/'
+     },
+     {
+       name: '2018',
+       link: '/'
+     }
+   ]
+ }
+
+
+
+-
+ var idealDatas = [
+  { 
+      title: '敦泰本善磅礡落成', 
+      image: '../../../images/card02_01.png',
+      date: '2017.11', 
+      link: 'https://www.google.com.tw/'
+    },
+  { 
+      title: '<div>全國各地之工業同會</div><div>參訪敦泰本善</div>', 
+      image: '../../../images/card02_02.png',
+      date: '2017.12', 
+      link: 'https://www.google.com.tw/'
+    },
+  { 
+      title: '新竹縣不動產參訪', 
+      image: '../../../images/card02_03.png',
+      date: '2018.01', 
+      link: 'https://www.google.com.tw/'
+  },
+  { 
+      title: '敦泰本善磅礡落成', 
+      image: '../../../images/card02_01.png',
+      date: '2017.11', 
+      link: 'https://www.google.com.tw/'
+    },
+  { 
+      title: '<div>全國各地之工業同會</div><div>參訪敦泰本善</div>', 
+      image: '../../../images/card02_02.png',
+      date: '2017.12', 
+      link: 'https://www.google.com.tw/'
+    },
+  { 
+      title: '新竹縣不動產參訪', 
+      image: '../../../images/card02_03.png',
+      date: '2018.01', 
+      link: 'https://www.google.com.tw/'
+  },
+ ]
+
+
+.about-block-ideals.py-5
+  .container
+    h2.block-title(class="text-center text-primary mb-4") 敦泰有為
+    .text-center.mb-4
+      p 敦勉誠篤、永續安泰，
+      p 個用心耕耘的建築團隊、一個您可以安居信賴的企業，
+      p 份以永續與國際眼光經營建築的初衷。
+      p Our ideal is still continue...
+      
+  .d-flex.justify-content-center(class="mb-5")
+    +menu(idealTab)
+    
+  .bg
+    .container
+      ul.row.m-0.p-0
+        each item, index in idealDatas
+            li.d-flex.col-lg-4.col-md-6.mb-5(class=(index == 3 ? 'd-md-none d-lg-flex': '') data-aos="fade-left" data-aos-delay=(100*index)  data-aos-duration="1000")
+              +card02(item)
+  .d-flex.justify-content-center(class="mt-5")
+    +pager(3)
+        

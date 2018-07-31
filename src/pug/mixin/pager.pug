@@ -1,14 +1,28 @@
-mixin pager(num)
+mixin pager(num, theme)
 
-  -var i = 1
-  
-  .pager.d-flex.align-content-middle
-    .prew.mr-4
-      a.icon.arrow-left
-    ul.d-flex.p-0.m-0
-      while i <= num
-        li.d-block(class=(i != 1 ? 'ml-1' : ''))
-          a.px-3.py-2(class=(i == 1 ? 'bg-white text-primary' : 'text-white') href="/")=i++
-    .next.ml-4
-      a.icon.arrow-right
+  -
+    var i = 1
+    theme = theme || 'primary'
+    
+  if theme === 'primary'
+    .pager.d-flex.align-items-center(class=theme)
+      .prew.mr-4
+        a.icon.arrow-left-primary
+      ul.d-flex.p-0.m-0
+        while i <= num
+          li.d-block(class=(i != 1 ? 'ml-1' : ''))
+            a.px-3.py-2(class=(i == 1 ? 'bg-primary text-white' : 'text-primary') href="/")=i++
+      .next.ml-4
+        a.icon.arrow-right-primary
+          
+  if theme === 'white'
+    .pager.d-flex.align-items-center(class=theme)
+      .prew.mr-4
+        a.icon.arrow-left-white
+      ul.d-flex.p-0.m-0
+        while i <= num
+          li.d-block(class=(i != 1 ? 'ml-1' : ''))
+            a.px-3.py-2(class=(i == 1 ? 'bg-white text-primary' : 'text-white') href="/")=i++
+      .next.ml-4
+        a.icon.arrow-right-white
       
