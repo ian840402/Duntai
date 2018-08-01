@@ -14,17 +14,17 @@
           color: white;
 
           .slogan {
-            font-size: 30px;
+            // font-size: 30px;
             margin-bottom: 20px;
             @include media-breakpoint-up(md) {
-              font-size: 3vw;
+              // font-size: 3vw;
             }
           }
 
           .description {
-            font-size: 15px;
+            // font-size: 15px;
             @include media-breakpoint-up(md) {
-              font-size: 1.3vw;
+              // font-size: 1.3vw;
             }
           }
         }

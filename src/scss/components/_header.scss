@@ -63,10 +63,10 @@ header {
     }
 
     .menu {
-      margin: -48px 0;
+      margin: -35px 0;
 
       li {
-        padding: 48px 0;
+        padding: 35px 0;
 
         &.active,
         &:hover {
@@ -77,8 +77,8 @@ header {
 
         a {
           color: rgb(244,193,176);
-          font-size: 36px;
-          line-height: 36px;
+          // font-size: 36px;
+          // line-height: 36px;
 
           &:hover {
             text-decoration: none;

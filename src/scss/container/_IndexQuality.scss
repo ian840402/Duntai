@@ -13,7 +13,7 @@
   }
 
   .info1 {
-    font-size: 18px;
+    // font-size: 18px;
     max-width: 860px;
     margin: 0 auto 50px;
   }
@@ -56,10 +56,10 @@
         a {
           padding: 0;
           color: white;
-          font-size: 24px;
-          @include media-breakpoint-up(md) {
-            font-size: 1.4vw;
-          }
+          // font-size: 24px;
+          // @include media-breakpoint-up(md) {
+          //   font-size: 1.4vw;
+          // }
 
           &:first-child {
             margin-bottom: 10px;
@@ -97,10 +97,10 @@
           background-color: #333333;
           padding: 20px;
           color: white;
-          font-size: 24px;
-          @include media-breakpoint-up(md) {
-            font-size: 1.4vw;
-          }
+          // font-size: 24px;
+          // @include media-breakpoint-up(md) {
+          //   font-size: 1.4vw;
+          // }
         }
       }
     }
