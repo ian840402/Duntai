@@ -14,12 +14,12 @@ mixin card01(obj)
       a(href=obj.link)
        img(src=obj.image)
     .wrap(class="px-5 py-3")
-      .title(class="mb-3")
-         h3 
-           a(href=obj.link) !{obj.title}
+      .title(class="mb-2")
+         h3.text-primary.font-weight-normal 
+           a.h4(href=obj.link) !{obj.title}
       .date.text-primary(class="mb-3")
-         h5.small=obj.date
+         .small=obj.date
       .body(class="mb-3")= obj.content
     .more(class="d-flex justify-content-center mt-auto mb-3")
-      a.btn.bg-primary.text-white(class="d-block p-2" href=obj.link) 閱讀更多
+      a.h3.btn.bg-primary.text-white(class="d-block p-2" href=obj.link) 閱讀更多
           
