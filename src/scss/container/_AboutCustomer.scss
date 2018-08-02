@@ -5,23 +5,18 @@
   .customer-block{
     h2.title{
       margin: 30px 0;
-      font-size: 3rem;
     }
     .text-wrap{
       margin-bottom: 35px;
       p{
-        font-size: 2rem;
       }
     }
     .description{
-     font-size: 26px;
      margin-bottom: 80px;
     }
     h3.title{
       word-break: keep-all;
-      font-size: 30px;
       @include media-breakpoint-up(xl){
-        font-size: 36px;
       }
         overflow: hidden;
         margin-bottom: 46px;
@@ -43,16 +38,13 @@
         }
     }
     .reply{
-      font-size: 26px;
     }
   }
 }
 .customer-banner{
   padding-bottom: 30px;
   .text{
-    font-size: 30px;
     @include media-breakpoint-up(xl){
-      font-size: 36px;
     }
   }
 }

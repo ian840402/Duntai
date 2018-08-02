@@ -3,9 +3,7 @@
   .bg-wrap {
     padding: 78px 54px;
     .text {
-      font-size: 2rem;
       @include media-breakpoint-up(xl) {
-        font-size: 48px;
       }
     }
   }
@@ -17,15 +15,11 @@
     .origination {
       margin-top: 27px;
       .title {
-        font-size: 2rem;
         @include media-breakpoint-up(xl) {
-          font-size: 48px;
         }
       }
       .text {
-        font-size: 1.5rem;
         @include media-breakpoint-up(xl) {
-          font-size: 30px;
           line-height: 3rem;
         }
         color: $brown-1;
@@ -36,11 +30,9 @@
   .goals,
   .strategy {
     .title {
-      font-size: 30px;
     }
     .text {
       color: $brown-1;
-      font-size: 22px;
     }
     .items-wrap {
       @include media-breakpoint-up(xl) {
@@ -52,7 +44,6 @@
         padding: 0;
         .item {
           color: $brown-1;
-          font-size: 22px;
         }
       }
     }

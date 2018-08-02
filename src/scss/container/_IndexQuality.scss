@@ -6,20 +6,17 @@
   padding: 110px 0;
 
   .block_title {
-    // font-size: 48px;
     // line-height: 48px;
     font-weight: normal;
     margin-bottom: 40px;
   }
 
   .info1 {
-    // font-size: 18px;
     max-width: 860px;
     margin: 0 auto 50px;
   }
 
   .info2 {
-    // font-size: 26px;
     max-width: 860px;
     margin: 0 auto 60px;
   }
@@ -28,7 +25,6 @@
     margin-bottom: 65px;
 
     h3 {
-      // font-size: 36px;
       // line-height: 36px;
       font-weight: normal;
       display: flex;
@@ -56,9 +52,7 @@
         a {
           padding: 0;
           color: white;
-          // font-size: 24px;
           // @include media-breakpoint-up(md) {
-          //   font-size: 1.4vw;
           // }
 
           &:first-child {
@@ -97,9 +91,7 @@
           background-color: #333333;
           padding: 20px;
           color: white;
-          // font-size: 24px;
           // @include media-breakpoint-up(md) {
-          //   font-size: 1.4vw;
           // }
         }
       }
@@ -152,7 +144,6 @@
     margin-top: 65px;
 
     a {
-      // font-size: 30px;
       // line-height: 30px;
       color: white;
       padding: 12px 35px;

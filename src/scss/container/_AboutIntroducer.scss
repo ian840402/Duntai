@@ -11,7 +11,6 @@
     }
     h2.title {
       font-weight: normal;
-      font-size: 48px;
       margin-bottom: 30px;
       @include media-breakpoint-up(xl) {
         margin-bottom: 80px;
@@ -23,7 +22,6 @@
       margin-bottom: 20px;
     }
     .title {
-      font-size: 20px;
       margin-bottom: 15px;
     }
     .introducer_body {
@@ -32,7 +30,6 @@
     .funder-word {
       .title {
         word-break: keep-all;
-        font-size: 36px;
         overflow: hidden;
         &:before {
           margin-right: 30px;
@@ -55,9 +52,7 @@
         p{
           margin: 30px 0 0 0;
           line-height: 40px;
-          font-size: 16px;
           @include media-breakpoint-up(xl) {
-            font-size: 26px;
           }
         }
       }
