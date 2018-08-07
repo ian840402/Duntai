@@ -14,25 +14,24 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
-        loader: 'style!css!sass'
-      }
-    ],
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
+        test: /\.css$/,
+        loaders: [
+          'style-loader',
+          'css-loader'
         ]
-      }
+      },
+      {
+        test: /\.ttf$/,
+        loaders: [
+          'url-loader'
+        ]
+      },
+      {
+        test: /\.(svg|gif|png|eot|woff|ttf)$/,
+        loaders: [
+          'url-loader'
+        ]
+    }
     ]
   },
 }
